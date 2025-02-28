@@ -12,6 +12,9 @@
 a{
     text-decoration: none;
 }
+ul li{
+    list-style: none;
+}
 body{
     background-color: black;
 }
@@ -128,7 +131,7 @@ nav .active{
 .hero-img{
     width: 47%;
     margin-top: -150px;
-    /* animation: planetAn 120s linear infinite; */
+    animation: planetAn 120s linear infinite;
 }
 .hero-btn{
     font-size: 18px;
@@ -163,7 +166,7 @@ nav .active{
 }
 .about-img{
     width: 90%;
-    animation: zoomIn 1s ease-in-out forwards;
+    animation: zoomIn 1.4s ease-in-out forwards;
     animation-delay: 0.2s;
     opacity: 0;
 } 
@@ -181,7 +184,7 @@ nav .active{
     letter-spacing: 1px;
     color: var(--primary-color);
     text-transform: capitalize;
-    animation: bottomIn 1.4s ease-in-out forwards;
+    animation: bottomIn 1s ease-in-out forwards;
     animation-delay: 0.2s;
     opacity: 0;
 }
@@ -190,15 +193,15 @@ nav .active{
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
-    animation: bottomIn 1s ease-in-out forwards;
+    animation: bottomIn 1.1s ease-in-out forwards;
     animation-delay: 0.2s;
     opacity: 0;
 }
-#about .left-grid p{
+#about .left-grid p,#project .left-grid p{
     font-size: 18px;
     line-height: 1.8;
     color: rgb(218, 218, 218);
-    animation: bottomIn 1s ease-in-out forwards;
+    animation: bottomIn 1.3s ease-in-out forwards;
     animation-delay: 0.2s;
     opacity: 0;
 }
@@ -218,10 +221,163 @@ nav .active{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    animation: bottomIn 1s ease-in-out forwards;
+    animation: bottomIn 1.4s ease-in-out forwards;
     animation-delay: 0.2s;
     opacity: 0;
 }
 .action-btn:hover{
     background-color: #00d11f;
+}
+#join-us .content-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.join-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.inputField{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: rgb(182,182,182);
+    background-color: transparent;
+    border: 1px solid white;
+    height: 45px;
+    width: 500px;
+    border-radius: 50px;
+    padding: 0 30px;
+}
+.inputField::placeholder{
+    color: white;
+}
+#join-us p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    animation: bottomIn 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.6s;
+}
+.checkbox-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+    animation: bottomIn 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.65s;
+}
+.join-btn{
+    background-color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    height: 45px;
+    width: 300px;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: bottomIn 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.7s;
+}
+.join-btn:hover{
+    background-color: #00d11f;
+}
+.input-1,.input-2,.input-3,.input-4{
+    animation: bottomIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+.input-1{
+    animation-delay: 0.4s;
+}
+.input-2{
+    animation-delay: 0.45s;
+}
+.input-3{
+    animation-delay: 0.50s;
+}
+.input-4{
+    animation-delay: 0.55s;
+}
+
+/* footer */
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    column-gap: 50px;
+}
+.footer-grid div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-grid div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.footer-item a{
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: rgb(204, 204, 204);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#footer h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    animation: bottomIn 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+
+}
+.footer-item a:hover{
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+#footer .section-box{
+    height: auto;
+}
+#footer{
+    align-items: start;
+    height: auto;
+    padding: 65px 0;
+}
+.item-1,.item-2,.item-3,.item-4,.item-5,.item-6{
+    animation: bottomIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.item-1{
+    animation-delay: 0.25s;
+}
+.item-2{
+    animation-delay: 0.3s;
+}
+.item-3{
+    animation-delay: 0.35s;
+}
+.item-4{
+    animation-delay: 0.4s;
+}
+.item-5{
+    animation-delay: 0.45s;
+}
+.item-6{
+    animation-delay: 0.5s;
 }
